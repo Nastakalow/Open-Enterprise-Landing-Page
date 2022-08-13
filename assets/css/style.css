@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url(../fonts/Proxima\ Nova\ Font.otf);
+}
+
+body{
+    background-color: #E5E5E5;
+}
+
+.container {
+  width: 1435px;
+  margin: 31px auto;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.col {
+  box-sizing: border-box;
+}
+
+.col-1 {
+  flex: 0 0 8.333333333333333%;
+}
+
+.col-2 {
+  flex: 0 0 16.66666666666667%;
+}
+
+.col-3 {
+  flex: 0 0 25%;
+}
+
+.col-4 {
+  flex: 0 0 33.33333333333333%;
+}
+
+.col-5 {
+  flex: 0 0 41.66666666666667%;
+}
+
+.col-6 {
+  flex: 0 0 50%;
+}
+
+.col-7 {
+  flex: 0 0 58.33333333333333%;
+}
+
+.col-8 {
+  flex: 0 0 66.66666666666667%;
+}
+
+.col-9 {
+  flex: 0 0 75%;
+}
+
+.col-10 {
+  flex: 0 0 83.33333333333333%;
+}
+
+.col-11 {
+  flex: 0 0 91.66666666666667%;
+}
+
+.col-12 {
+  flex: 0 0 100%;
+}
+
+/* 
+    ||
+    ||
+    ||
+    \/
+*/
+
+.header{
+    margin-bottom: 50px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  margin-left: 8px;
+  letter-spacing: -0.04em;
+  color: #303031;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.02em;
+  color: #303031;
+
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+.menu a:first-child {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.02em;
+  color: #303031;
+}
+
+.menu a:last-child {
+  font-weight: 800;
+  color: #71a894;
+}
+
+.left-aside h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 80px;
+  color: #303031;
+}
+
+.left-aside p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  color: #66645e;
+  margin: 24px 0 49px;
+}
+
+.left-aside button {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  padding: 20px 24px;
+  border-radius: 8px;
+  background-color: #71A894;
+  border: none;
+  cursor: pointer;
+}
+
+.right-aside img{
+    float: right;
+}
