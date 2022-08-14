@@ -41,3 +41,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+.col, .left-side, .right-side, .card{
+	box-sizing: border-box;
+}
