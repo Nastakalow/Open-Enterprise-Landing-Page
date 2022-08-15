@@ -268,7 +268,8 @@ body {
   border-radius: 50%;
 }
 
-.section-kickstart .kickstart-example .member-info-content h4 {
+.section-kickstart .kickstart-example .member-info-content h4,
+.section-onboard .onboard-example .member-info-content h4 {
   font-family: "SchulVokalDotless";
   font-style: normal;
   font-weight: 600;
@@ -283,7 +284,8 @@ body {
   color: #303031;
 }
 
-.section-kickstart .kickstart-example .member-info-content small {
+.section-kickstart .kickstart-example .member-info-content small,
+.section-onboard .onboard-example .member-info-content small {
   font-family: "SchulVokalDotless";
   font-style: normal;
   font-weight: 500;
