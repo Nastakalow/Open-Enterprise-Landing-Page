@@ -1,89 +1,10 @@
-@font-face {
-  font-family: "SchulVokalDotless";
-  src: url("../fonts/SchulVokalDotless.ttf");
-}
-
-@font-face {
-  font-family: "Proxima Nova";
-  src: url("../fonts/Proxima\ Nova\ Font.otf");
-}
-
-.header {
-  margin: 33px 33px 80px 31px;
-}
-
-.section-request {
-  margin-bottom: 187px;
-}
-
-.section-reimagining {
-  margin-bottom: 189px;
-}
-
-.section-kickstart{
-  margin-bottom: 131px;
-}
-
 body {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 .container {
   width: 1440px;
   margin: 0 auto;
-  border: 1px solid red;
-}
-
-.row {
-  display: flex;
-}
-
-.col-1 {
-  flex: 0 0 8.333333333333333%;
-}
-
-.col-2 {
-  flex: 0 0 16.66666666666667%;
-}
-
-.col-3 {
-  flex: 0 0 25%;
-}
-
-.col-4 {
-  flex: 0 0 33.33333333333333%;
-}
-
-.col-5 {
-  flex: 0 0 41.66666666666667%;
-}
-
-.col-6 {
-  flex: 0 0 50%;
-}
-
-.col-7 {
-  flex: 0 0 58.33333333333333%;
-}
-
-.col-8 {
-  flex: 0 0 66.66666666666667%;
-}
-
-.col-9 {
-  flex: 0 0 75%;
-}
-
-.col-10 {
-  flex: 0 0 83.33333333333333%;
-}
-
-.col-11 {
-  flex: 0 0 91.66666666666667%;
-}
-
-.col-12 {
-  flex: 0 0 100%;
 }
 
 /* 
@@ -93,12 +14,12 @@ body {
     \/
 */
 
-.logo {
+.header .header-logo {
   display: flex;
   align-items: center;
 }
 
-.logo h1 {
+.header .header-logo h1 {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
@@ -109,13 +30,13 @@ body {
   color: #303031;
 }
 
-.menu {
+.header .header-menu {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-.menu a {
+.header .header-menu a {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
@@ -128,27 +49,22 @@ body {
   margin-left: 40px;
 }
 
-.menu a:first-child {
+.header .header-menu a:first-child {
   font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
   line-height: 25px;
-  letter-spacing: -0.02em;
-  color: #303031;
 }
 
-.menu a:last-child {
+.header .header-menu a:last-child {
   font-weight: 800;
   color: #71a894;
 }
 
-.left-side {
+.section-collaboration .collaboration {
   margin: 112px 0 0 56px;
   flex-basis: 608px;
 }
 
-.left-side h2 {
+.section-collaboration .collaboration h2 {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -162,7 +78,7 @@ body {
   margin-bottom: 24px;
 }
 
-.left-side p {
+.section-collaboration .collaboration p {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
@@ -178,7 +94,8 @@ body {
   margin-bottom: 49px;
 }
 
-.left-side button {
+.section-collaboration .collaboration button,
+.section-start-openprise .start-openprise button {
   font-family: "Proxima Nova";
   font-style: normal;
   font-weight: 700;
@@ -192,17 +109,19 @@ body {
   cursor: pointer;
 }
 
-.right-side {
+.section-collaboration .collaboration-illustration {
   margin-left: 12px;
 }
 
-.reimagining {
+.section-reimagining .reimagining,
+.section-helpus .helpus {
   text-align: center;
   flex-basis: 895px;
   margin: 0 auto 48px;
 }
 
-.reimagining h2 {
+.section-reimagining .reimagining h2,
+.section-helpus .helpus h2 {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 800;
@@ -216,7 +135,8 @@ body {
   color: #303031;
 }
 
-.reimagining p {
+.section-reimagining .reimagining p,
+.section-helpus .helpus p {
   font-family: "Proxima Nova";
   font-style: normal;
   font-weight: 400;
@@ -231,25 +151,21 @@ body {
   color: #303031;
 }
 
-.row-cards {
+.section-reimagining .reimagining-cards {
   justify-content: space-between;
   padding: 0 56px;
 }
 
-.card {
-  /* border: 1px solid red; */
-
+.section-reimagining .reimagining-cards .card {
   background-color: #fff;
   text-align: center;
   padding: 75px 24px 64px;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  /* margin: 50px; */
-  /* margin-right: 15px; */
   flex-basis: 427px;
 }
 
-.card h3 {
+.section-reimagining .reimagining-cards .card h3 {
   font-family: "Proxima Nova";
   font-style: normal;
   font-weight: 700;
@@ -263,7 +179,7 @@ body {
   margin-top: 37px;
 }
 
-.card p {
+.section-reimagining .reimagining-cards .card p {
   font-family: "Proxima Nova";
   font-style: normal;
   font-weight: 400;
@@ -277,12 +193,12 @@ body {
   margin-top: 16px;
 }
 
-.kickstart {
+.section-kickstart .kickstart {
   margin: 4px 138px 0 56px;
   flex-basis: 644px;
 }
 
-.kickstart h2 {
+.section-kickstart .kickstart h2 {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 800;
@@ -295,7 +211,7 @@ body {
   color: #303031;
 }
 
-.kickstart p {
+.section-kickstart .kickstart p {
   font-family: "Proxima Nova";
   font-style: normal;
   font-weight: 400;
@@ -311,7 +227,7 @@ body {
   margin-top: 24px;
 }
 
-.members {
+.section-kickstart .kickstart-example {
   flex-basis: 484px;
   /* White */
 
@@ -324,7 +240,7 @@ body {
   padding: 32px 0 32px 38px;
 }
 
-.members h3 {
+.section-kickstart .kickstart-example h3 {
   font-family: "SchulVokalDotless";
   font-style: normal;
   font-weight: 700;
@@ -339,20 +255,20 @@ body {
   color: #303031;
 }
 
-.members ul li{
+.section-kickstart .kickstart-example ul li {
   display: flex;
   align-items: center;
   gap: 12px;
   margin-bottom: 20px;
 }
 
-.members img{
+.section-kickstart .kickstart-example img {
   width: 72px;
   height: 72px;
   border-radius: 50%;
 }
 
-.member-info h4 {
+.section-kickstart .kickstart-example .member-info-content h4 {
   font-family: "SchulVokalDotless";
   font-style: normal;
   font-weight: 600;
@@ -367,7 +283,7 @@ body {
   color: #303031;
 }
 
-.member-info small {
+.section-kickstart .kickstart-example .member-info-content small {
   font-family: "SchulVokalDotless";
   font-style: normal;
   font-weight: 500;
@@ -382,4 +298,563 @@ body {
   color: #66645e;
 }
 
+.section-onboard .onboard-example {
+  position: relative;
+  flex-basis: 484px;
+  padding: 32px 40px;
+  margin-left: 80px;
+  border: 4px solid #303031;
+  border-radius: 16px;
+  background-color: #fff;
+}
 
+.section-onboard .onboard-example .member-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.section-onboard .onboard-example p {
+  font-family: "SchulVokalDotless";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  letter-spacing: -0.02em;
+
+  /* Black */
+
+  color: #303031;
+  margin: 24px 0;
+}
+
+.section-onboard .onboard-example .activity {
+  display: flex;
+  gap: 74px;
+}
+
+.section-onboard .onboard-example .activity h5 {
+  font-family: "SchulVokalDotless";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: -0.02em;
+
+  /* Gray */
+
+  color: #66645e;
+  margin-bottom: 12px;
+}
+
+.section-onboard .onboard-example .activity strong {
+  font-family: "SchulVokalDotless";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+
+  letter-spacing: -0.02em;
+
+  /* Black */
+
+  color: #303031;
+}
+
+.section-onboard .onboard-example button {
+  background: #303031;
+  border-radius: 16px;
+  padding: 12px 132px;
+
+  font-family: "SchulVokalDotless";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+
+  letter-spacing: -0.02em;
+
+  /* White */
+
+  color: #ffffff;
+  border: none;
+  margin-top: 32px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.section-onboard .onboard-example .grid {
+  position: absolute;
+  left: -33px;
+  bottom: -33px;
+  z-index: -1;
+}
+
+.section-onboard .onboard {
+  flex-basis: 644px;
+  margin-left: 178px;
+  padding-top: 39px;
+}
+
+.section-onboard .onboard h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 64px;
+  /* or 133% */
+
+  /* Black */
+
+  color: #303031;
+  margin: 24px 0;
+}
+
+.section-onboard .onboard p {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  /* or 144% */
+
+  letter-spacing: -0.02em;
+
+  /* Black */
+
+  color: #303031;
+}
+
+.section-contributor .contributor {
+  flex-basis: 644px;
+  margin: 71px 46px 0 56px;
+}
+
+.section-contributor .contributor h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 64px;
+  /* or 133% */
+
+  /* Black */
+
+  color: #303031;
+  margin: 18.75px 0 24px;
+}
+
+.section-contributor .contributor p {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  /* or 144% */
+
+  letter-spacing: -0.02em;
+
+  /* Black */
+
+  color: #303031;
+}
+
+.section-contributor .contributor-example {
+  display: flex;
+  flex-basis: 636px;
+  flex-wrap: wrap;
+  gap: 12px;
+  height: fit-content;
+}
+
+.section-contributor .contributor-example .write-open-enterprise {
+  flex: 0 0 100%;
+  background: #ffffff;
+  /* Black */
+
+  border: 4px solid #303031;
+  border-radius: 16px;
+  padding: 28px 59.5px 24px;
+}
+
+.section-contributor .contributor-example .write-open-enterprise h4 {
+  display: inline;
+  font-family: "SchulVokalDotless";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+
+  letter-spacing: -0.02em;
+
+  /* Black */
+  color: #303031;
+}
+
+.section-contributor .contributor-example .write-open-enterprise p {
+  font-family: "SchulVokalDotless";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  letter-spacing: -0.02em;
+
+  /* Black */
+  width: 404px;
+  color: #303031;
+  clear: both;
+  margin-top: 16px;
+}
+
+.section-contributor .contributor-example .write-open-enterprise small {
+  float: right;
+  font-family: "SchulVokalDotless";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: -0.02em;
+
+  /* White */
+
+  color: #ffffff;
+  background: #71a894;
+  border-radius: 40px;
+  padding: 4px 8px;
+}
+
+.section-contributor .contributor-example .applicants {
+  flex: 0 0 381px;
+  background: #f3f0ea;
+  /* Black */
+
+  border: 4px solid #303031;
+  border-radius: 16px;
+  padding: 32px 40px;
+}
+
+.section-contributor .contributor-example .applicants h3 {
+  font-family: "SchulVokalDotless";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+
+  letter-spacing: -0.02em;
+
+  /* Black */
+
+  color: #303031;
+  margin-bottom: 24px;
+}
+
+.section-contributor .contributor-example .applicants ul li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.section-contributor .contributor-example .applicants ul li img {
+  border-radius: 50%;
+}
+
+.section-contributor .contributor-example .applicants ul li h4 {
+  font-family: "SchulVokalDotless";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height, or 120% */
+
+  letter-spacing: -0.02em;
+
+  /* Black */
+
+  color: #303031;
+}
+
+.section-contributor .contributor-example .alex-rose {
+  flex: 0 0 240px;
+  background: #ffffff;
+  /* Green */
+
+  border: 4px solid #71a894;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-contributor .contributor-example .alex-rose img {
+  width: 72px;
+  height: 72px;
+}
+
+.section-contributor .contributor-example .alex-rose h3 {
+  font-family: "SchulVokalDotless";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height, or 120% */
+
+  letter-spacing: -0.02em;
+
+  /* Black */
+
+  color: #303031;
+  margin: 16px 0 4px;
+}
+
+.section-contributor .contributor-example .alex-rose small {
+  font-family: "SchulVokalDotless";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  letter-spacing: -0.02em;
+
+  /* Gray */
+
+  color: #66645e;
+}
+
+.section-contributor .contributor-example .alex-rose p {
+  font-family: "SchulVokalDotless";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: -0.02em;
+
+  /* Black */
+
+  color: #303031;
+  margin: 16px 0;
+  align-self: flex-start;
+}
+
+.section-contributor .contributor-example .alex-rose button {
+  font-family: "SchulVokalDotless";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+
+  letter-spacing: -0.02em;
+
+  /* White */
+  width: 100%;
+  color: #ffffff;
+  background: #303031;
+  border-radius: 16px;
+  padding: 12px 40px;
+  cursor: pointer;
+}
+
+.section-helpus .helpus-cards {
+  padding: 0 52px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.section-helpus .helpus-cards .card {
+  flex-basis: 427px;
+  background: #ffffff;
+  /* Card Shadow */
+
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 30px;
+}
+
+.section-helpus .helpus-cards .card h3 {
+  font-family: "SchulVokalDotless";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+
+  letter-spacing: -0.02em;
+
+  /* Black */
+
+  color: #303031;
+}
+
+.section-helpus .helpus-cards .card p {
+  font-family: "SchulVokalDotless";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  letter-spacing: -0.02em;
+
+  /* Black */
+
+  color: #303031;
+  margin: 16px 0 24px;
+}
+
+.section-helpus .helpus-cards .card small {
+  font-family: "SchulVokalDotless";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: -0.02em;
+
+  /* White */
+
+  color: #ffffff;
+  background: #71a894;
+  border-radius: 40px;
+  padding: 4px 8px;
+}
+
+.section-helpus .helpus-cards .card strong {
+  float: right;
+  font-family: "SchulVokalDotless";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: -0.02em;
+
+  /* Black */
+
+  color: #303031;
+}
+
+.section-helpus .view-more {
+  justify-content: center;
+}
+
+.section-helpus .view-more .button {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+
+  text-align: center;
+
+  /* White */
+  color: #ffffff;
+  background: #303031;
+  border-radius: 8px;
+
+  flex-basis: 136px;
+  margin-top: 64px;
+  padding: 20px 24px;
+  cursor: pointer;
+}
+
+.section-start-openprise .start-openprise {
+  flex-basis: 644px;
+  margin: 59px 0 0 56px;
+}
+
+.section-start-openprise .start-openprise h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 64px;
+  /* identical to box height, or 133% */
+
+  /* Black */
+
+  color: #303031;
+}
+
+.section-start-openprise .start-openprise p {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  /* or 144% */
+
+  letter-spacing: -0.02em;
+
+  /* Black */
+
+  color: #303031;
+  margin: 24px 0 40px;
+}
+
+.section-start-openprise .start-illustration {
+  margin-left: 40px;
+}
+
+.footer {
+  padding: 0 56px;
+}
+
+.footer .footer-logo {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  /* identical to box height */
+
+  letter-spacing: -0.04em;
+
+  /* Black */
+
+  color: #303031;
+}
+
+.footer .footer-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 40px;
+}
+
+.footer .footer-menu a {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+
+  /* Black */
+
+  color: #303031;
+  text-decoration: none;
+}
+
+.footer .footer-menu a:last-child {
+  font-weight: 700;
+  color: #71a894;
+}

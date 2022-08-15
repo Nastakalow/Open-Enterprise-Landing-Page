@@ -9,17 +9,20 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/font.css">
+    <link rel="stylesheet" href="./assets/css/spacing.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Landing Page</title>
   </head>
   <body>
     <div class="container">
       <header class="row header">
-        <div class="col-3 col logo">
-          <img src="./assets/images/logo.png" alt="Logo" />
+        <div class="col-3 header-logo">
+          <img src="./assets/icons/Logo.png" alt="Logo" />
           <h1>Open Enterprise</h1>
         </div>
-        <div class="col-9 col menu">
+        <div class="col-9 header-menu">
           <a href="#">Why Open Enterprise</a>
           <a href="#">Features</a>
           <a href="#">Contribute</a>
@@ -27,8 +30,8 @@
         </div>
       </header>
 
-      <section class="row section-request">
-        <div class="col-6 col left-side">
+      <section class="row section-collaboration">
+        <div class="col-6 collaboration">
           <h2>A new model for open collaboration</h2>
           <p>
             Run an organization where members get rewarded for their
@@ -36,15 +39,15 @@
           </p>
           <button>Request early access</button>
         </div>
-        <div class="col-6 col right-side">
-          <img src="./assets/images/Illustration.png" alt="Illustration" />
+        <div class="col-6 collaboration-illustration">
+          <img src="./assets/images/Illustration(1).png" alt="Illustration" />
         </div>
       </section>
 
       <section class="row section-reimagining">
         <div class="col-12 col">
           <div class="row">
-            <div class="col-12 col reimagining">
+            <div class="col-12 reimagining">
               <h2>Reimagining what it means to work</h2>
               <p>
                 Teams and communities using Open Enterprise fundamentally unlock
@@ -54,25 +57,25 @@
               </p>
             </div>
           </div>
-          <div class="row row-cards">
-            <div class="col-4 col card">
-              <img src="./assets/images/Modern_workforce.png" alt="" />
+          <div class="row reimagining-cards">
+            <div class="col-4 card">
+              <img src="./assets/icons/Modern_workforce.png" alt="" />
               <h3>Modern workforce</h3>
               <p>
                 Multistakeholder governance aligns employees with the
                 organization’s wider community.
               </p>
             </div>
-            <div class="col-4 col card">
-              <img src="./assets/images/Meritocratic.png" alt="" />
+            <div class="col-4 card">
+              <img src="./assets/icons/Meritocratic.png" alt="" />
               <h3>Meritocratic by design</h3>
               <p>
                 Tokenized ownership aligns deeply committed individuals with the
                 organization’s success.
               </p>
             </div>
-            <div class="col-4 col card">
-              <img src="./assets/images/Engineered.png" alt="" />
+            <div class="col-4 card">
+              <img src="./assets/icons/Engineered.png" alt="" />
               <h3>Engineered for resilience</h3>
               <p>
                 Open Enterprise supports best practices in sociocratic
@@ -84,8 +87,8 @@
       </section>
 
       <section class="row section-kickstart">
-        <div class="col-6 col kickstart">
-          <img src="./assets/images/Kickstart.png" alt="" />
+        <div class="col-6 kickstart">
+          <img src="./assets/icons/Kickstart.png" alt="" />
           <h2>Kickstart an organization with your co-founders</h2>
           <p>
             It’s the early days, you just had a long conversation with two
@@ -94,26 +97,26 @@
             startup journey.
           </p>
         </div>
-        <div class="col-6 col members">
+        <div class="col-6 kickstart-example">
           <h3>Members</h3>
           <ul>
             <li>
               <img src="./assets/images/Dillon Kydd 1.png" alt="" />
-              <div class="member-info">
+              <div class="member-info-content">
                 <h4>Dillon Kydd</h4>
                 <small>100 SHARES</small>
               </div>
             </li>
             <li>
               <img src="./assets/images/Anna Olsen 1.png" alt="" />
-              <div class="member-info">
+              <div class="member-info-content">
                 <h4>Anna Olsen</h4>
                 <small>100 SHARES</small>
               </div>
             </li>
             <li>
               <img src="./assets/images/Kas Moss 1.png" alt="" />
-              <div class="member-info">
+              <div class="member-info-content">
                 <h4>Kas Moss</h4>
                 <small>100 SHARES</small>
               </div>
@@ -122,12 +125,14 @@
         </div>
       </section>
 
-      <div class="row">
-        <div class="col-6 col user-jassir">
-          <img src="" alt="" />
+      <section class="row section-onboard">
+        <div class="col-6 onboard-example">
           <div class="member-info">
-            <h4>Jassir Jonis</h4>
-            <small>Pre-seed angel investor</small>
+            <img src="./assets/images/Jassir Jonis.png" alt="" />
+            <div class="member-info-content">
+              <h4>Jassir Jonis</h4>
+              <small>Pre-seed angel investor</small>
+            </div>
           </div>
           <p>
             Hey guys, love what you’re doing and I’m convinced that together
@@ -144,38 +149,160 @@
             </div>
           </div>
           <button>Go to vote</button>
+          <img class="grid" src="./assets/images/Grid.png" alt="">
         </div>
 
-        <div class="col-6 col"></div>
-      </div>
+        <div class="col-6 onboard">
+          <img src="./assets/icons/Ellipse.png" alt="" />
+          <h2>Onboard users, investors and advisors as you grow</h2>
+          <p>
+            You’ve bootstrapped and delivered an MVP, and some investors and
+            advisors are interested in having a chat with you. As an Open
+            Enterprise, you can onboard them seamlessly into your digital
+            organization and align them with your success.
+          </p>
+        </div>
+      </section>
 
-      <div class="row">
-        <div class="col-6 col">ROW7</div>
-        <div class="col-6 col"></div>
-      </div>
+      <section class="row section-contributor">
+        <div class="col-6 contributor">
+          <img src="./assets/icons/Contributor.png" alt="" />
+          <h2>Engage highly committed contributors</h2>
+          <p>
+            You need talented people on-demand across various tasks that your
+            full-time workforce can’t prioritize at the moment. As an Open
+            Enterprise, you can easily fund tasks and have people apply to work
+            on them in return for funds or shares.
+          </p>
+        </div>
+        <div class="col-6 contributor-example">
+          <div class="write-open-enterprise">
+            <h4>Write a how-to on Open Enterprise</h4>
+            <small>1 SHARE</small>
+            <p>
+              Looking for an amazing copywriter using Open Enterprise to help us
+              write an article on how to get started.
+            </p>
+          </div>
+          <div class="applicants">
+            <h3>3 applicants</h3>
+            <ul>
+              <li>
+                <img src="./assets/images/Jason Kwon.png" alt="" />
+                <div class="applicant-info-content">
+                  <h4>Jason Kwon</h4>
+                </div>
+              </li>
+              <li>
+                <img src="./assets/images/Alex Rose.png" alt="" />
+                <div class="applicant-info-content">
+                  <h4>Alex Rose</h4>
+                </div>
+              </li>
+              <li>
+                <img src="./assets/images/Lizzie Ulrich.png" alt="" />
+                <div class="applicant-info-content">
+                  <h4>Lizzie Ulrich</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="alex-rose">
+            <img src="./assets/images/Alex Rose(72x72).png" alt="" />
+            <h3>Alex Rose</h3>
+            <small>UX Writer</small>
+            <p>4 commits</p>
+            <button>View profile</button>
+          </div>
+        </div>
+      </section>
 
-      <div class="row">
+      <section class="row section-helpus">
         <div class="col-12 col">
           <div class="row">
-            <div class="col-12 col">ROW8</div>
+            <div class="col-12 helpus">
+              <h2>Help us improve Open Enterprise</h2>
+              <p>
+                As an Open Enterprise ourselves, we are actively looking for new
+                talent to join our mission of improving and delivering the Open
+                Enterprise model to the world. Apply for open tasks and earn a
+                stake in our success.
+              </p>
+            </div>
           </div>
-          <div class="row">
-            <div class="col-4 col">ROW9</div>
-            <div class="col-4 col"></div>
-            <div class="col-4 col"></div>
+          <div class="row helpus-cards">
+            <div class="col-4 card">
+              <h3>Update documentation with FAQs</h3>
+              <p>
+                Review our community chat for the most frequently asked
+                questions and document answers for our product docs.
+              </p>
+              <small>10 AUT</small>
+              <strong>Apply by May 18</strong>
+            </div>
+            <div class="col-4 card">
+              <h3>Update documentation with FAQs</h3>
+              <p>
+                Review our community chat for the most frequently asked
+                questions and document answers for our product docs.
+              </p>
+              <small>10 AUT</small>
+              <strong>Apply by May 18</strong>
+            </div>
+            <div class="col-4 card">
+              <h3>Tutorial video series</h3>
+              <p>
+                Create a series of video tutorials that cover everything from
+                start to finish on using Open Enterprise.
+              </p>
+              <small>40 AUT</small>
+              <strong>Apply by May 20</strong>
+            </div>
           </div>
+          <div class="row view-more">
+            <div class="col-12 button">
+                View more
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="row divider">
+        <div class="col-12">
+          <img src="./assets/images/Divider.png" alt="">
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-6 col">ROW10</div>
-        <div class="col-6 col"></div>
-      </div>
+      <section class="row section-start-openprise">
+        <div class="col-6 start-openprise">
+          <h2>Start an Open Enterprise</h2>
+          <p>If you can’t wait to run a new or existing organization on Open Enterprise and are willing to explore and navigate the beta, we’d love to get you started.</p>
+          <button>Request early access</button>
+        </div>
+        <div class="col-6 start-illustration">
+          <img src="./assets/images/Illustration(2).png" alt="">
+        </div>
+      </section>
 
-      <div class="row">
-        <div class="col-2 col">ROW11</div>
-        <div class="col-10 col"></div>
-      </div>
+      <footer class="row footer">
+        <div class="col-2 col footer-logo">
+          <h2>Open Enterprise</h2>
+        </div>
+        <div class="col-10 col footer-menu">
+          <a href="#">
+            Documentation
+          </a>
+          <a href="#">
+            GitHub
+          </a>
+          <a href="#">
+            Twitter
+          </a>
+          <a href="#">
+            Contact us
+          </a>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
