@@ -535,7 +535,7 @@ body {
 }
 
 .section-contributor .contributor-example .write-open-enterprise small {
-  /* float: right; */
+  float: right;
   font-family: "SchulVokalDotless";
   font-style: normal;
   font-weight: 500;
@@ -755,7 +755,7 @@ body {
 }
 
 .section-helpus .helpus-cards .card strong {
-  /* float: right; */
+  float: right;
   font-family: "SchulVokalDotless";
   font-style: normal;
   font-weight: 600;
