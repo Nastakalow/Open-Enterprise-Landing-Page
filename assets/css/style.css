@@ -534,8 +534,12 @@ body {
   margin-top: 16px;
 }
 
-.section-contributor .contributor-example .write-open-enterprise small {
+.section-contributor .contributor-example .write-open-enterprise small{
   float: right;
+}
+
+.section-contributor .contributor-example .write-open-enterprise small,
+.section-helpus .helpus-cards .card small {
   font-family: "SchulVokalDotless";
   font-style: normal;
   font-weight: 500;
@@ -550,7 +554,7 @@ body {
   color: #ffffff;
   background: #71a894;
   border-radius: 40px;
-  padding: 4px 8px;
+  padding: 6px 8px;
 }
 
 .section-contributor .contributor-example .applicants {
@@ -685,6 +689,7 @@ body {
   color: #ffffff;
   background: #303031;
   border-radius: 16px;
+  border: none;
   padding: 12px 40px;
   cursor: pointer;
 }
@@ -736,24 +741,6 @@ body {
   margin: 16px 0 24px;
 }
 
-.section-helpus .helpus-cards .card small {
-  font-family: "SchulVokalDotless";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  /* identical to box height, or 150% */
-
-  letter-spacing: -0.02em;
-
-  /* White */
-
-  color: #ffffff;
-  background: #71a894;
-  border-radius: 40px;
-  padding: 4px 8px;
-}
-
 .section-helpus .helpus-cards .card strong {
   float: right;
   font-family: "SchulVokalDotless";
@@ -788,7 +775,7 @@ body {
   color: #ffffff;
   background: #303031;
   border-radius: 8px;
-
+  border: none;
   flex-basis: 136px;
   margin-top: 64px;
   padding: 20px 24px;
