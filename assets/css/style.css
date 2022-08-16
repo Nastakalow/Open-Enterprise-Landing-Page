@@ -2,6 +2,10 @@ body {
   background-color: #e5e5e5;
 }
 
+.row {
+  display: flex;
+}
+
 .container {
   width: 1440px;
   margin: 0 auto;
@@ -13,6 +17,14 @@ body {
     ||
     \/
 */
+
+.section-reimagining, .section-helpus{
+  flex-direction: column;
+}
+
+.header{
+  justify-content: space-between;
+}
 
 .header .header-logo {
   display: flex;
@@ -31,8 +43,9 @@ body {
 }
 
 .header .header-menu {
+  flex-basis: 615px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -42,16 +55,20 @@ body {
   font-weight: 600;
   font-size: 18px;
   line-height: 21px;
-  letter-spacing: -0.02em;
-  color: #303031;
+  /* identical to box height */
 
+  letter-spacing: -0.02em;
+
+  /* Black */
+
+  color: #303031;
   text-decoration: none;
-  margin-left: 40px;
 }
 
 .header .header-menu a:first-child {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   line-height: 25px;
+  
 }
 
 .header .header-menu a:last-child {
@@ -518,7 +535,7 @@ body {
 }
 
 .section-contributor .contributor-example .write-open-enterprise small {
-  float: right;
+  /* float: right; */
   font-family: "SchulVokalDotless";
   font-style: normal;
   font-weight: 500;
@@ -738,7 +755,7 @@ body {
 }
 
 .section-helpus .helpus-cards .card strong {
-  float: right;
+  /* float: right; */
   font-family: "SchulVokalDotless";
   font-style: normal;
   font-weight: 600;
@@ -818,6 +835,7 @@ body {
 
 .footer {
   padding: 0 56px;
+  justify-content: space-between;
 }
 
 .footer .footer-logo {
@@ -836,10 +854,10 @@ body {
 }
 
 .footer .footer-menu {
+  flex-basis: 464px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+  justify-content: space-between;
 }
 
 .footer .footer-menu a {
